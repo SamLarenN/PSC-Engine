@@ -71,7 +71,7 @@ int main(int argc, char* argv[])
 	gen->GenOPRegMem(OP::ADD, REG::EAX, REG::EAX, 0x3C, 0);
 	gen->GenOPRegMem(OP::MOV, REG::EAX, REG::EAX, 0x78, 0);
 	gen->GenOPRegMem(OP::ADD, REG::EAX, "KernelBase", 0);
-	gen->GenOPMemReg(OP::MOV, "ExportAddressTable", REG::EAX, 0);*/
+	gen->GenOPMemReg(OP::MOV, "ExportAddressTable", REG::EAX, 0);
 
 
 	gen->Label("_Ret");
